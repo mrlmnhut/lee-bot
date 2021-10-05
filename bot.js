@@ -14,7 +14,9 @@ class EchoBot extends ActivityHandler {
                 await context.sendActivity('ăn cứt 💩💩');
             } else if (mess.search('phelan sao') >= 1) {
                 await context.sendActivity('bị ghệ bỏ haha');
-            } else {
+            } else if (mess.search('Nancy sao') >= 1) {
+                await context.sendActivity('Nancy ngáo chứ sao');
+            }else {
                 const random = Math.floor(Math.random() * messXample.length);
                 await context.sendActivity(messXample[random]);
             }
